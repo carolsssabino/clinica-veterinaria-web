@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Busca — Sistema Clínica Veterinária</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kodchasan:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/estilo.css">
+</head>
+<body data-pagina="busca">
+  <main class="tela">
+    <header class="topo">Sistema Clínica Veterinária<small>Carolina Sabino de Araujo</small></header>
+    <form id="form-busca" class="barra" role="search">
+      <button type="submit" aria-label="Buscar">&#128269;</button>
+      <input name="termo" type="search" placeholder="Buscar por nome ou CPF" aria-label="Buscar por nome ou CPF" autofocus>
+    </form>
+    <section id="resultados" class="resultados" aria-live="polite"></section>
+    <a class="voltar" href="index.html">Voltar</a>
+  </main>
+  <script src="assets/js/validacoes.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

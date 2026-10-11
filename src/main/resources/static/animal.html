@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro de animal — Sistema Clínica Veterinária</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kodchasan:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/estilo.css">
+</head>
+<body data-pagina="animal">
+  <main class="tela">
+    <header class="topo">Sistema Clínica Veterinária<small>Carolina Sabino de Araujo</small></header>
+    <h1 class="titulo">Cadastro de animal</h1>
+    <div id="aviso" class="aviso" role="status"></div>
+    <form id="form-animal">
+      <div class="campo"><label for="nome">Nome:</label>
+        <input id="nome" name="nome" type="text" data-validar="obrigatorio"><div class="erro" role="alert"></div></div>
+      <div class="campo"><label for="tipo">Tipo (cachorro, gato...)</label>
+        <input id="tipo" name="tipo" type="text" data-validar="obrigatorio"><div class="erro" role="alert"></div></div>
+      <div class="campo"><label for="raca">Raça:</label>
+        <input id="raca" name="raca" type="text" ><div class="erro" role="alert"></div></div>
+      <div class="campo"><label for="idade">Idade (anos)</label>
+        <input id="idade" name="idade" type="number" min="0" step="1" data-validar="obrigatorio inteiro"><div class="erro" role="alert"></div></div>
+      <div class="campo"><label for="cpf">CPF do tutor</label>
+        <input id="cpf" name="cpf" type="text" inputmode="numeric" placeholder="000.000.000-00" data-mascara="cpf" data-validar="obrigatorio cpf"><div class="erro" role="alert"></div><div class="dica">O tutor precisa estar cadastrado antes.</div></div>
+      <div class="acoes"><button class="botao salvar" type="submit">Salvar</button><a class="botao cancelar" href="index.html">Cancelar</a></div>
+    </form>
+  </main>
+  <script src="assets/js/validacoes.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

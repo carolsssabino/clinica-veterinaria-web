@@ -1,0 +1,10 @@
+target/
+build/
+dist/
+nbproject/private/
+nbbuild/
+data/
+*.log
+.idea/
+*.iml
+.vscode/

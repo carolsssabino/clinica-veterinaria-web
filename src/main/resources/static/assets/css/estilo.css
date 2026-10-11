@@ -1,0 +1,47 @@
+:root{--rosa1:#ff7d7d;--rosa2:#ffa9a9;--rosa3:#ffd4d4;--caixa:#ffd9d9;--menu:#fac3c3;--botao-menu:#cc7777;--azul:#ccf8ff;--vermelho:#ff1d1d;--texto:#111;--erro:#b00020}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:'Kodchasan','Itim','Segoe UI',sans-serif;color:var(--texto);background:linear-gradient(180deg,var(--rosa1),var(--rosa2) 50%,var(--rosa3))}
+body.login{background:linear-gradient(180deg,#fff3f3,var(--rosa3))}
+h1,h2{font-family:'Itim','Kodchasan',sans-serif;font-weight:400;margin:0}
+.topo{background:var(--caixa);padding:14px 20px;max-width:520px;margin:28px auto 12px;text-transform:uppercase;font-size:1.15rem}
+.topo small{display:block;text-align:right;font-size:.7rem;margin-top:2px}
+.tela{max-width:760px;margin:0 auto;padding:0 20px 40px}
+.titulo{background:var(--caixa);text-align:center;text-transform:uppercase;padding:6px 18px;width:fit-content;margin:0 auto 22px;font-size:1.05rem}
+.campo{display:grid;grid-template-columns:200px 1fr;gap:6px 14px;align-items:center;margin-bottom:14px;text-transform:uppercase;font-size:.95rem}
+.campo label{text-align:right}
+.campo .erro{grid-column:2;color:var(--erro);font-size:.78rem;text-transform:none}
+.campo.invalido input,.campo.invalido select{outline:2px solid var(--erro)}
+input,select,textarea{width:100%;background:var(--caixa);border:0;padding:10px 12px;font:inherit;border-radius:2px}
+textarea{min-height:64px;resize:vertical}
+.linha{display:flex;gap:8px;align-items:center}
+.mini{background:var(--azul);border:0;font:inherit;font-size:.75rem;padding:8px 12px;cursor:pointer;text-transform:uppercase;white-space:nowrap}
+.formas{display:flex;flex-wrap:wrap;gap:8px}
+.formas label{background:var(--azul);padding:4px 12px;font-size:.78rem;cursor:pointer;text-align:left}
+.formas input{width:auto;margin-right:4px}
+.acoes{display:flex;justify-content:space-between;gap:20px;margin-top:30px}
+.botao{flex:1;font-family:'Itim','Kodchasan',sans-serif;font-size:1.9rem;text-transform:uppercase;padding:12px;border:0;text-align:center;text-decoration:none;color:var(--texto);cursor:pointer}
+.botao.salvar{background:var(--azul)}.botao.cancelar{background:var(--vermelho)}
+.aviso{display:none;padding:10px 14px;margin:0 0 18px;background:#fff;border-left:6px solid #2e7d32}
+.aviso.ok,.aviso.falha{display:block}.aviso.falha{border-color:var(--erro);color:var(--erro)}
+.voltar{display:block;width:fit-content;margin:18px auto 0;background:var(--vermelho);color:var(--texto);padding:4px 40px;text-decoration:none;font-size:.8rem;text-transform:uppercase}
+.dica{grid-column:2;font-size:.75rem;text-transform:none}
+.cartao-login{max-width:560px;margin:0 auto;padding:0 20px 40px}
+.cartao-login .topo{margin-top:40px;max-width:none;font-size:1.8rem}
+.cartao-login .campo{grid-template-columns:150px 1fr;font-family:'Itim',sans-serif;font-size:2.2rem}
+.cartao-login input{background:var(--rosa2);padding:14px}
+.cartao-login .botao{display:block;width:70%;margin:30px auto 0}
+.app{display:grid;grid-template-columns:230px 1fr;min-height:100vh;background:var(--rosa3)}
+.menu{background:var(--menu);padding:30px 20px;display:flex;flex-direction:column;gap:22px}
+.menu a{background:var(--botao-menu);color:#fff;text-decoration:none;text-transform:uppercase;padding:12px 14px;font-size:.85rem;text-align:center}
+.menu a.primeiro{font-size:1.1rem}
+.menu a.sair{margin-top:auto;background:var(--vermelho);color:var(--texto)}
+.inicio{padding:20px 30px}
+.inicio .topo,.inicio .boasvindas{margin:0 0 22px;max-width:none}
+.boasvindas{background:#ffbfbf;padding:14px 18px;text-transform:uppercase}
+.inicio img{width:100%;max-width:640px;display:block}
+.barra{display:flex;background:#fff;border-radius:30px;overflow:hidden;max-width:520px;margin:0 auto 22px;box-shadow:0 2px 6px #0003}
+.barra button{background:var(--botao-menu);border:0;width:56px;cursor:pointer;color:#fff}
+.barra input{background:#fff;border-radius:0}
+.resultados{background:#fff6f6;padding:18px 24px;font-family:'Itim',sans-serif;font-size:1.6rem}
+.resultados h2{margin-bottom:8px}.resultados .item{margin-bottom:14px}
+@media(max-width:700px){.campo{grid-template-columns:1fr}.campo label{text-align:left}.campo .erro,.dica{grid-column:1}.app{grid-template-columns:1fr}.botao{font-size:1.4rem}}

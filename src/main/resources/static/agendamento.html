@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agendar consultas — Sistema Clínica Veterinária</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kodchasan:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/estilo.css">
+</head>
+<body data-pagina="agendamento">
+  <main class="tela">
+    <header class="topo">Sistema Clínica Veterinária<small>Carolina Sabino de Araujo</small></header>
+    <h1 class="titulo">Agendar consultas</h1>
+    <div id="aviso" class="aviso" role="status"></div>
+    <form id="form-agendamento">
+      <div class="campo"><label for="cpf">CPF do tutor</label>
+        <div class="linha"><input id="cpf" name="cpf" type="text" inputmode="numeric" placeholder="000.000.000-00" data-mascara="cpf" data-validar="obrigatorio cpf"><button class="mini" type="button" id="btn-buscar">Buscar</button></div>
+        <div class="erro" role="alert"></div></div>
+      <div class="campo"><label for="animal">Selecionar animal</label>
+        <select id="animal" name="animal" data-validar="selecao"><option value="">Selecione</option></select><div class="erro" role="alert"></div></div>
+      <div class="campo"><label for="veterinario">Veterinário</label>
+        <select id="veterinario" name="veterinario" data-validar="selecao"><option value="">Selecione</option></select><div class="erro" role="alert"></div></div>
+      <div class="campo"><label for="data">Data da consulta</label>
+        <input id="data" name="data" type="date" data-validar="obrigatorio data-futura"><div class="erro" role="alert"></div></div>
+      <div class="campo"><label for="hora">Horário da consulta</label>
+        <select id="hora" name="hora" data-validar="selecao"><option value="">Selecione</option><option>08:00</option><option>09:00</option><option>10:00</option><option>11:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option></select><div class="erro" role="alert"></div></div>
+      <div class="acoes"><button class="botao salvar" type="submit">Confirmar</button><a class="botao cancelar" href="index.html">Cancelar</a></div>
+    </form>
+  </main>
+  <script src="assets/js/validacoes.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

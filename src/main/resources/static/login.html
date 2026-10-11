@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login — Sistema Clínica Veterinária</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kodchasan:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/estilo.css">
+</head>
+<body data-pagina="login" class="login">
+  <main class="cartao-login">
+    <header class="topo">Sistema Clínica Veterinária<small>Carolina Sabino de Araujo</small></header>
+    <div id="aviso" class="aviso" role="alert"></div>
+    <form id="form-login">
+      <div class="campo"><label for="usuario">Login:</label>
+        <input id="usuario" name="usuario" type="text" autocomplete="username" data-validar="obrigatorio"><div class="erro" role="alert"></div></div>
+      <div class="campo"><label for="senha">Senha:</label>
+        <input id="senha" name="senha" type="password" autocomplete="current-password" data-validar="obrigatorio"><div class="erro" role="alert"></div></div>
+      <button class="botao salvar" type="submit">Entrar</button>
+    </form>
+  </main>
+  <script src="assets/js/validacoes.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
